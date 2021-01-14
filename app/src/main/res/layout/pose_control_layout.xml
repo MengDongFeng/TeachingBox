@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/TCP_POSTURE"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="TCP姿态:"
+        android:textColor="#0000FF"
+        android:textSize="@dimen/big_title_15"
+        android:gravity="center" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+
+        <ImageView
+            android:id="@+id/RZ_PLUS"
+            android:layout_width="@dimen/image_width_35"
+            android:layout_height="@dimen/image_height_50"
+            android:src="@drawable/rz_inc"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.14"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/RZ_MIN"
+            android:layout_width="@dimen/image_width_35"
+            android:layout_height="@dimen/image_height_50"
+            android:src="@drawable/rz_dec"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.14"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/RY_PLUS"
+            android:layout_width="@dimen/image_width_35"
+            android:layout_height="@dimen/image_height_50"
+            android:src="@drawable/ry_inc"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.28"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/RY_MIN"
+            android:layout_width="@dimen/image_width_35"
+            android:layout_height="@dimen/image_height_50"
+            android:src="@drawable/ry_dec"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.72"
+            app:layout_constraintHorizontal_bias="0.5"/>
+
+        <ImageView
+            android:id="@+id/RX_PLUS"
+            android:layout_width="@dimen/image_width_50"
+            android:layout_height="@dimen/image_height_35"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/rx_inc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.75"/>
+
+        <ImageView
+            android:id="@+id/RX_MIN"
+            android:layout_width="@dimen/image_width_50"
+            android:layout_height="@dimen/image_height_35"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/rx_dec"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.25"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>

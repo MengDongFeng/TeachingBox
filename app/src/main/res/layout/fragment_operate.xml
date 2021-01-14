@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:showDividers="beginning|middle|end"
+        android:divider="@drawable/divide">
+
+        <LinearLayout
+            android:id="@+id/visual_model"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:showDividers="beginning|end|middle"
+                android:divider="@drawable/divide">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3">
+
+                    <LinearLayout
+                        android:id="@+id/model"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/Record_begin"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginEnd="5dp"
+                                android:background="@drawable/rounded_edittext"
+                                android:text="开始"
+                                android:textColor="#ffffff"
+                                android:textSize="26sp" />
+
+                            <Button
+                                android:id="@+id/Record_end"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginEnd="5dp"
+                                android:background="@drawable/rounded_edittext"
+                                android:text="结束"
+                                android:textColor="#ffffff"
+                                android:textSize="26sp" />
+
+                            <Button
+                                android:id="@+id/Record_point"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginEnd="5dp"
+                                android:background="@drawable/rounded_edittext"
+                                android:text="记录"
+                                android:textColor="#ffffff"
+                                android:textSize="26sp" />
+
+                            <Button
+                            android:id="@+id/Record_process"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@drawable/rounded_edittext"
+                            android:text="执行"
+                            android:textColor="#ffffff"
+                            android:textSize="26sp" />
+
+                            <!--    <Button
+                                    android:id="@+id/Record_pause"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:background="@drawable/rounded_edittext"
+                                    android:layout_margin="5dp"
+                                    android:text="暂停"
+                                    android:textColor="#ffffff"
+                                    android:textSize="26sp" />
+
+                                <Button
+                                    android:id="@+id/Record_stop"
+                                    android:layout_width="70dp"
+                                    android:layout_height="70dp"
+                                    android:background="@drawable/rounded_edittext"
+                                    android:layout_margin="5dp"
+                                    android:text="停止"
+                                    android:textColor="#ffffff"
+                                    android:textSize="26sp" />-->
+                            <Button
+                                android:id="@+id/Reset"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginEnd="5dp"
+                                android:background="@drawable/rounded_edittext"
+                                android:text="复位"
+                                android:textColor="#ffffff"
+                                android:textSize="26sp" />
+
+                            <Button
+                                android:id="@+id/Send"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginEnd="5dp"
+                                android:background="@drawable/rounded_edittext"
+                                android:text="发送"
+                                android:textColor="#ffffff"
+                                android:textSize="26sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E91E63" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:showDividers="beginning|end|middle"
+                        android:divider="@drawable/divide">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+                            <!--  button       -->
+                            <include layout="@layout/position_control_layout"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+                            <include layout="@layout/pose_control_layout"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#E91E63" />
+
+        <LinearLayout
+            android:id="@+id/control_region"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:showDividers="beginning|end|middle"
+                android:divider="@drawable/divide">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="X"
+                                    android:textColor="#0f0f0f"
+                                    android:textSize="@dimen/textview_size_15" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="Y"
+                                    android:textColor="#0f0f0f"
+                                    android:textSize="@dimen/textview_size_15" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="Z"
+                                    android:textColor="#0f0f0f"
+                                    android:textSize="@dimen/textview_size_15" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="α"
+                                    android:textColor="#0f0f0f"
+                                    android:textSize="@dimen/textview_size_15" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="β"
+                                    android:textColor="#0f0f0f"
+                                    android:textSize="@dimen/textview_size_15" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="γ"
+                                    android:textColor="#0f0f0f"
+                                    android:textSize="@dimen/textview_size_15" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/x"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_gravity="bottom"
+                                    android:gravity="left"
+                                    android:textSize="@dimen/editview_size_15"
+                                    android:inputType="numberDecimal|numberSigned"
+                                    android:text="-440.0"
+                                    />
+
+                                <EditText
+                                    android:id="@+id/y"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_gravity="bottom"
+                                    android:gravity="left"
+                                    android:textSize="@dimen/editview_size_15"
+                                    android:inputType="numberDecimal|numberSigned"
+                                    android:text="0.0"
+                                    />
+
+                                <EditText
+                                    android:id="@+id/z"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_gravity="bottom"
+                                    android:gravity="left"
+                                    android:textSize="@dimen/editview_size_15"
+                                    android:inputType="numberDecimal|numberSigned"
+                                    android:text="378.0"/>
+
+                                <EditText
+                                    android:id="@+id/rx"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_gravity="bottom"
+                                    android:gravity="left"
+                                    android:textSize="@dimen/editview_size_15"
+                                    android:inputType="numberDecimal|numberSigned"
+                                    android:text="180.0"/>
+
+                                <EditText
+                                    android:id="@+id/ry"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_gravity="bottom"
+                                    android:gravity="left"
+                                    android:textSize="@dimen/editview_size_15"
+                                    android:inputType="numberDecimal|numberSigned"
+                                    android:text="0.0"/>
+
+                                <EditText
+                                    android:id="@+id/rz"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:layout_gravity="bottom"
+                                    android:gravity="left"
+                                    android:textSize="@dimen/editview_size_15"
+                                    android:inputType="numberDecimal|numberSigned"
+                                    android:text="-180.0"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E91E63" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/SendInfo"
+                            android:textSize="@dimen/big_title_15"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Info:\n"/>
+
+                    </ScrollView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E91E63" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <include layout="@layout/angle_control_layout"/>
+
+                       <!-- <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:stretchColumns="1">
+                            &lt;!&ndash;设置运行被拉伸的列的列序号  &ndash;&gt;
+                            <TableRow>
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="30sp"
+                                    android:text="   服务器IP：   "/>
+                                <EditText
+                                    android:id="@+id/editRemoteIP"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="30sp"
+                                    android:text="192.168.0.100"/>
+                            </TableRow>
+                        </TableLayout>
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:stretchColumns="1">
+
+                            <TableRow>
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:textSize="30sp"
+                                    android:text="     端口:   "/>
+                                <EditText
+                                    android:id="@+id/edtRemotePort"
+                                    android:textSize="30sp"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="9008  "/>
+                            </TableRow>
+                        </TableLayout>
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content"
+                            android:stretchColumns="1">
+
+                            <TableRow>
+
+                                <Button
+                                    android:id="@+id/Connect"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="80dp"
+                                    android:background="@drawable/rounded_edittext"
+                                    android:text="通信连接"
+                                    android:textSize="30sp"
+                                    android:textColor="#ffffff"
+                                    android:onClick="ConnectButtonClick"/>
+
+&lt;!&ndash;                                <Button
+                                    android:id="@+id/robot_run"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="80dp"
+                                    android:textSize="30sp"
+                                    android:layout_marginLeft="20dp"
+                                    android:background="@drawable/rounded_edittext"
+                                    android:textColor="#ffffff"
+                                    android:text="机器人启动"/>&ndash;&gt;
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/textReceiveInfo"
+                                android:textSize="30sp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="ReceiveInfo:\n"/>
+
+                        </ScrollView>-->
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

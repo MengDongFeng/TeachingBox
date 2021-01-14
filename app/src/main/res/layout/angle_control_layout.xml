@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/TCP_POSITION"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关节角控制区："
+        android:textColor="#0000FF"
+        android:textSize="@dimen/big_title_15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:progressDrawable="@drawable/seekbar_color"
+            android:thumb="@animator/seekbar_thumb"
+            android:layout_weight="5"/>
+
+        <TextView
+            android:id="@+id/joint1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:gravity="center_vertical"
+            android:text="J1 0"
+            android:textSize="@dimen/editview_size_15"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/seekBar2"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:progressDrawable="@drawable/seekbar_color"
+            android:thumb="@animator/seekbar_thumb"
+            android:layout_weight="5"/>
+
+        <TextView
+            android:id="@+id/joint2"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:gravity="center_vertical"
+            android:text="J2 0"
+            android:textSize="@dimen/editview_size_15"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/seekBar3"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:progressDrawable="@drawable/seekbar_color"
+            android:thumb="@animator/seekbar_thumb"
+            android:layout_weight="5"/>
+
+        <TextView
+            android:id="@+id/joint3"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:gravity="center_vertical"
+            android:text="J3 0"
+            android:textSize="@dimen/editview_size_15"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/seekBar4"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:progressDrawable="@drawable/seekbar_color"
+            android:thumb="@animator/seekbar_thumb"
+            android:layout_weight="5"/>
+
+        <TextView
+            android:id="@+id/joint4"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:gravity="center_vertical"
+            android:text="J4 0"
+            android:textSize="@dimen/editview_size_15"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/seekBar5"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:progressDrawable="@drawable/seekbar_color"
+            android:thumb="@animator/seekbar_thumb"
+            android:layout_weight="5"/>
+
+        <TextView
+            android:id="@+id/joint5"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:gravity="center_vertical"
+            android:text="J5 0"
+            android:textSize="@dimen/editview_size_15"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/seekBar6"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:progressDrawable="@drawable/seekbar_color"
+            android:thumb="@animator/seekbar_thumb"
+            android:layout_weight="5"/>
+
+        <TextView
+            android:id="@+id/joint6"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:gravity="center_vertical"
+            android:text="J6 0"
+            android:textSize="@dimen/editview_size_15"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/seekBar7"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:progressDrawable="@drawable/seekbar_color"
+            android:thumb="@animator/seekbar_thumb"
+            android:layout_weight="5"/>
+
+        <TextView
+            android:id="@+id/joint7"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:gravity="center_vertical"
+            android:text="J7 0"
+            android:textSize="@dimen/editview_size_15"/>
+
+    </LinearLayout>
+
+</LinearLayout>
